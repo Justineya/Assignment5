@@ -23,8 +23,9 @@ public class Join extends Operator{
 
 		}
 
-		}
 
+	   }
+		
 	
 	/**
      * It is used to return a new tuple which is already joined by the common attribute
@@ -40,7 +41,7 @@ public class Join extends Operator{
 		for (Attribute a:tuple1.getAttributeList()){
 			for(Tuple tuple:tuples1){
 				for(Attribute a1:tuple.getAttributeList()){
-					if(a.getAttributeName().equals(a1.getAttributeName())&& a.getAttributeValue().equals(a1.getAttributeValue())){
+					if(a.getAttributeName().equals(a1.getAttributeName())&& a.getAttributeValue().equals(a1.getAttributeValue()) ){
 						for (Attribute a2:tuple1.getAttributeList()){
 							newAttributeList.add(a2);
 						}
