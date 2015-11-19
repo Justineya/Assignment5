@@ -21,6 +21,7 @@ public class Sort extends Operator{
 			Tuple tuple=child.next();
 			if(tuple==null)
 				break;
+			
 			tuples.add(tuple);
 		}
 		for(Tuple tuple1:tuples){
